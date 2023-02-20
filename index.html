@@ -11,26 +11,19 @@
     <div class="books-list">
         <h1>Awesome Books</h1>
         <div class="list">
-            <div class="books">
-                <h5>Lorem Ipsum</h5>
-                <p>Testeroo Tasty</p>
-                <button type="button">Remove</button>
-            </div>
-            <div class="books">
-                <h5>Lorem Ipsum</h5>
-                <p>Testeroo Tasty</p>
-                <button type="button">Remove</button>
+            <div class="books" id="list">
+                
             </div>
         </div>
         <div class="form">
-            <form action="">
-                <input type="text" name="bookName" id="bookName" placeholder="Title">
-                <input type="text" name="author" id="author" placeholder="Author">
+            <form id="book_form" method="post">
+                <input type="text" name="bookName" id="bookName" placeholder="Title" required>
+                <input type="text" name="author" id="author" placeholder="Author" required>
                 <input type="submit" value="Add" name="addBook" id="addBook">
             </form>
         </div>
     </div>
 
-    <script src="script.js"></script>
+<script src="script.js"></script>
 </body>
 </html>
