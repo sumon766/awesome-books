@@ -19,14 +19,7 @@ function displaybooks() {
   listBox.innerHTML = bookscontainer;
 }
 
-addBtn.addEventListener('click', (e) => {
-  e.preventDefault();
-  const title = document.getElementById('bookName').value;
-  const auther = document.getElementById('author').value;
-  addBook(title, auther);
-});
-
-function addBook (title, auther) {
+function addBook(title, auther) {
   const book = localStorage.getItem('book');
   if (book === null) {
     books = [];
@@ -40,6 +33,13 @@ function addBook (title, auther) {
   localStorage.setItem('book', JSON.stringify(books));
   displaybooks();
 }
+
+addBtn.addEventListener('click', (e) => {
+  e.preventDefault();
+  const title = document.getElementById('bookName').value;
+  const auther = document.getElementById('author').value;
+  addBook(title, auther);
+});
 
 function Remove(index) { // eslint-disable-line no-unused-vars
   const book = localStorage.getItem('book');
