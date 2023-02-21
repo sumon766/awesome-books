@@ -95,9 +95,10 @@ And just open the index file in any browser
 
 👤 **Santosh Konappanavar**
 
-- GitHub: [@githubhandle](https://github.com/santosh)
-- Twitter: [@twitterhandle](https://twitter.com/santosh)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/santosh)
+
+- GitHub: [@Santosh-Konappanavar](https://github.com/Santosh-Konappanavar)
+- Twitter: [@SantoshKonapp1](https://twitter.com/SantoshKonappa1)
+- LinkedIn: [@Santosh Konappanavar](https://www.linkedin.com/in/santosh-konappanavar/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
