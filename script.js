@@ -23,6 +23,10 @@ addBtn.addEventListener('click', (e) => {
   e.preventDefault();
   const title = document.getElementById('bookName').value;
   const auther = document.getElementById('author').value;
+  addBook(title, auther);
+});
+
+function addBook (title, auther) {
   const book = localStorage.getItem('book');
   if (book === null) {
     books = [];
@@ -35,7 +39,7 @@ addBtn.addEventListener('click', (e) => {
   });
   localStorage.setItem('book', JSON.stringify(books));
   displaybooks();
-});
+}
 
 function Remove(index) { // eslint-disable-line no-unused-vars
   const book = localStorage.getItem('book');
@@ -44,3 +48,5 @@ function Remove(index) { // eslint-disable-line no-unused-vars
   localStorage.setItem('book', JSON.stringify(books));
   displaybooks();
 }
+
+displaybooks();
