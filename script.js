@@ -3,11 +3,11 @@ let books = [];
 const addBtn = document.getElementById('addBook');
 const listBox = document.getElementById('list');
 
-/* eslint class-methods-use-this: ["error", { "exceptMethods": ["displayBooks"] }] */
 class AllBook {
   displayBooks() {
     const book = localStorage.getItem('book');
-    if (book === null) {
+    this.book = book;
+    if (this.book === null) {
       books = [];
     } else {
       books = JSON.parse(book);
