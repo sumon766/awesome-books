@@ -142,6 +142,6 @@ This project could not be completed without the support of my partner Santosh, h
 
 ## 📝 License <a name="license"></a>
 
-This project is [MIT](https://github.com/sumon766/awesome-books/blob/set-books/LICENSE.md) licensed.
+This project is [MIT](https://github.com/sumon766/awesome-books/blob/awesome-class/LICENSE.md) licensed.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
