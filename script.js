@@ -3,23 +3,19 @@ let books = [];
 const addBtn = document.getElementById('addBook');
 const listBox = document.getElementById('list');
 
+/* eslint class-methods-use-this: ["error", { "exceptMethods": ["displayBooks"] }] */
 class AllBook {
-  constructor() {
-    this.books = [];
-  }
-
   displayBooks() {
     const book = localStorage.getItem('book');
     if (book === null) {
-      this.books = [];
+      books = [];
     } else {
-      this.books = JSON.parse(book);
+      books = JSON.parse(book);
     }
     let bookscontainer = '';
     books.forEach((item, index) => {
       bookscontainer += `<div class="book">
-        <h3>${item.title}</h3>
-        <p>${item.author}</p>
+        <p>"${item.title}" by ${item.author}</p>
         <button type="button" onClick="bookLibrary.removeBook(${index})">Remove</button>
       </div>`;
     });
