@@ -8,22 +8,63 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="books-list">
-        <h1>Awesome Books</h1>
-        <div class="list">
-            <div class="books" id="list">
-                
+    <header id="header">
+        <div class="navigation">
+            <h1><a href="index.html">Awesome Books</a></h1>
+            <nav class="nav">
+                <ul>
+                    <li><a href="#bookList">List</a></li>
+                    <li><a href="#addBook">Add New</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="bookList">
+        <div class="books-list">
+            <h2>All awesome books</h2>
+            <div class="list">
+                <div class="books" id="list">
+                    
+                </div>
             </div>
         </div>
-        <div class="form">
-            <h2>Add a new book</h2>
-            <form id="book_form" method="post">
-                <input type="text" name="bookName" id="bookName" placeholder="Title" required>
-                <input type="text" name="author" id="author" placeholder="Author" required>
-                <input type="submit" value="Add" name="addBook" id="addBook">
-            </form>
+    </section>
+
+    <section id="addBook">
+        <div class="add-book">
+            <div class="form">
+                <h2>Add a new book</h2>
+                <form id="book_form" method="post">
+                    <input type="text" name="bookName" id="bookName" placeholder="Title" required>
+                    <input type="text" name="author" id="author" placeholder="Author" required>
+                    <input type="submit" value="Add" name="addBook" id="add_Book">
+                </form>
+            </div>
         </div>
-    </div>
+    </section>
+
+    <section id="contact">
+        <div class="contact">
+            <h2>Contact information</h2>
+            <div class="contact-details">
+                <p>Do you have any question or you just want to say "Hello"?</p>
+                <ul>
+                    <li>Our e-mail: <a href="mailto:mail@mail.com">mail@mail.com</a></li>
+                    <li>Our phone number: xxx-xxx-xxx</li>
+                    <li>Our address is: India Bangladesh Friendship Comunity</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <footer id="footer">
+        <div class="footer">
+            <h3>Copyright</h3>
+            <p>...</p>
+        </div>
+    </footer>
 
 <script src="script.js"></script>
 </body>

@@ -1,16 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Kalam:wght@300;400;700&display=swap');
+
 * {
   margin: 0;
   padding: 0;
 }
 
+#header {
+  display: flex;
+  justify-content: center;
+}
+
+.navigation {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 30px;
+  height: 33px;
+  position: fixed;
+}
+
+.navigation h1 a {
+  justify-self: flex-start;
+  font-family: 'Inter', sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+  color: #1c1c1c;
+  text-decoration: none;
+}
+
+.nav ul {
+  display: flex;
+  align-items: center;
+}
+
+.nav ul li {
+  list-style-type: none;
+  border-right: 1px solid #1c1c1c;
+}
+
+.nav ul li a {
+  text-decoration: none;
+  color: #1c1c1c;
+  font-family: 'Inter', sans-serif;
+  font-size: 18px;
+  padding: 12px 18px;
+}
+
+.nav ul li:last-child {
+  border-right: 0 solid #1c1c1c;
+}
+
+.contact-details ul li a {
+  text-decoration: none;
+  color: #1c1c1c;
+}
+
+.nav ul li a:hover {
+  color: #5475e2;
+}
+
+.nav ul li a:active {
+  color: #5475e2;
+}
+
 .books-list {
-  width: 50%;
+  width: 60%;
   display: flex;
   flex-direction: column;
   margin: 0 auto;
+  padding-top: 9%;
+  min-height: 100vh;
+  font-family: 'Inter', sans-serif;
+  font-size: 15px;
+}
+
+.books-list h2 {
+  font-size: 35px;
   text-align: center;
-  font-family: sans-serif;
-  margin-top: 50px;
+  font-family: 'Kalam', cursive;
+  color: #1c1c1c;
 }
 
 .list {
@@ -31,6 +100,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 0 10px;
+  color: #1c1c1c;
 }
 
 .book:nth-child(odd) {
@@ -50,6 +120,17 @@
   box-shadow: 2px 2px #131212;
 }
 
+.add-book {
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  align-items: center;
+}
+
+.form {
+  width: 60%;
+}
+
 form {
   display: flex;
   flex-direction: column;
@@ -60,6 +141,10 @@ form {
 
 .form h2 {
   margin-bottom: 15px;
+  text-align: center;
+  font-family: 'Kalam', cursive;
+  font-size: 35px;
+  color: #1c1c1c;
 }
 
 input[type="text"] {
@@ -79,4 +164,59 @@ input[type="submit"] {
   border-radius: 0;
   border: 1px solid #010101;
   box-shadow: 5px 5px #131212;
+}
+
+.contact {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact h2 {
+  margin-bottom: 15px;
+  text-align: center;
+  font-family: 'Kalam', cursive;
+  font-size: 35px;
+  color: #1c1c1c;
+}
+
+.contact-details {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Inter', sans-serif;
+  font-size: 18px;
+  color: #1c1c1c;
+}
+
+.contact-details p {
+  margin: 50px 0 40px 0;
+}
+
+#footer {
+  display: flex;
+  justify-content: center;
+}
+
+.footer {
+  width: 80%;
+  display: flex;
+  min-height: 50px;
+  font-family: 'Kalam', cursive;
+  font-weight: 600;
+  color: #1c1c1c;
+  font-size: 35px;
+  justify-content: flex-start;
+  position: fixed;
+  bottom: 2%;
+  border: 2px solid #1c1c1c;
+  padding: 0 2%;
+}
+
+.footer p {
+  margin-left: 5%;
 }
