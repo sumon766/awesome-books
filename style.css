@@ -60,7 +60,7 @@
   color: #5475e2;
 }
 
-.nav ul li a:active {
+#menu .active {
   color: #5475e2;
 }
 
